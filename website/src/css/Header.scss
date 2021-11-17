@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0 ;
+}
+
+.header{
+display: flex;
+  //align-items: center;
+  //justify-content: center;
+&__search{
+  display: flex;
+  padding-right: 200px;
+}
+  &__icons{
+    display: flex;
+    align-items: center;
+  }
+  &__name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 369px;
+  }
+&__input{
+}
+  &__icons1{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  &__icons2{
+    width: 25px ;
+    height: 25px;
+    margin-right: 14px;
+  }
+  &__tittle{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    margin-left: 141px;
+
+  }
+
+  &__languages{
+
+  }
+  &__lang{
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 17px;
+    text-transform: capitalize;
+
+  }
+
+}
+.header__search_img{
+  width: 50px;
+  height: 50px;
+  margin-top: 27px;
+}
+.header-menu__link{
+  display: flex;
+  font-weight: 500;
+  height: 48px;
+  padding: 12px 12px 5px 0;
+  text-transform: uppercase;
+  color: #202020;
+  text-decoration: none;
+  transition: all .5s;
+  border-bottom: 0.5px solid transparent;
+
+}
+.header-menu__link:hover{
+  border-bottom: 2px solid #FFDAB9;
+}
+.header__menu-section-list{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -53px;
+
+}
+
+.btn-color{
+  color: #202020;
+}
+
+.king__accent{
+font-size: 36px;
+display: flex;
+  font-weight: 700;
+  color: #fefefe;
+  margin: 87px;
+
+}
+.list__image1{
+width: 100%;height: 100%;
+}
+.list__image2{
+  width: 100%;
+  height: 100%
+}
+
+.main{
+  &__photo{
+    margin-left: -17px;
+  }
+  &__tittle{
+    position: absolute;
+    top: 356px;
+    left: 49px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;  }
+  &__image-list{
+    display: flex;
+    margin: -26px 23px;
+    line-height: 1.3;
+
+  }
+  &__tittle-list{
+    position: absolute;
+    top: 1213px;
+    left: 69px;
+    font-size: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  .main__tittle_list2{
+    position: absolute;
+    left: 624px;
+    top: 1215px;
+    font-size: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  .main__tittle_list3{
+    position: absolute;
+    top: 1189px;
+    left: 1197px;
+    font-size: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+
+  &__image2{
+    display: flex;
+  }
+  &__image3{
+    display: flex;
+  }
+  &__image-sub{
+    width: 50%;
+    height: 50%;
+  }
+  &__photo-sub{
+    padding: 40px;
+    width: 103%;
+  }
+
+}
+
+.products{
+  //display: flex;
+&__images{}
+  &__list-block{
+    top: 1885px;
+
+    position: absolute;
+    left: 13px;
+    //bottom: -1400px;
+  }
+  &__list-block-tittle{
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif
+  }
+  &__list-price{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif
+
+  }
+  &__list{
+
+  }
+&__list-tittle{
+
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Cinzel,sans-serif;
+  text-align: center;
+  padding: 93px;
+
+  }
+  &__list-descr{}
+  &__list-img1{
+    width: 250px;
+  }
+  &__list-img2{
+    width: 311px;
+  }
+  &__list-img3{
+    width: 249px;
+  }
+  &__list-img4{
+    width: 285px;
+  }
+  &__list-images{
+
+  }
+
+}
+
+
+.footer{
+  background-color: #F5F5DC;
+  border-radius: 2px;
+  height: 155px;
+  &__container{}
+  &__menu{}
+  &__menu-list{}
+  &__menu-item{}
+  &__menu-link{}
+}
