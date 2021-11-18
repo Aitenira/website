@@ -96,112 +96,188 @@
     </div>
     <div class="main__image-list">
       <p class="main__tittle-list">Короли акцентов</p>
-      <img class="main__image-sub" src="../assets/main.jpeg" alt="">
-      <p class="main__tittle_list2">Кольца</p>
-      <img src="../assets/bij3.jpeg" alt="">
-      <p class="main__tittle_list3">Тренды сезона</p>
-      <img src="../assets/bij6.jpeg" alt="">
+      <img class="" src="../assets/main.jpeg" alt="">
+  <div>
+    <p class="main__tittle_list2">Кольца</p>
+    <img  class="main__tittle-list-img" src="../assets/bij3.jpeg" alt="">
+  </div>
+      <div>
+        <p class="main__tittle_list3">Тренды сезона</p>
+        <img class="main__tittle-list-img" src="../assets/bij6.jpeg" alt="">
+      </div>
     </div>
-  </div>
 
-  <div class="products">
-    <div class="products__list">
-      <p class="products__list-tittle">Best Sellers</p>
+
+    <div class="main__image-list2">
+<!--      <p class="main-imgs-tittle">Каждый день счастливые обладательницы находят в себе женственность,силу ,харизму в-->
+<!--        <a href="">PaperMoon</a> </p>-->
+      <a  class="main-imgs-tittle" href="">PaperMoon</a>
+
+      <div class="main__column-img1">
+<!--        <p class="main-imgs-tittle">Каждый день счастливые обладательницы находят в себя женственность,силу ,харизму в-->
+<!--          <a href="">PaperMoon</a> </p>-->
+        <img class="main-imgs1" src="../assets/lookbook3.jpeg" alt="">
+      </div>
+      <div>
+        <img  class="main-imgs" src="../assets/lookbook2.jpeg" alt="">
+      </div>
+      <div>
+        <img   class="main-imgs" src="../assets/lookbook1.jpeg" alt="">
+
+      </div>
     </div>
-<div class="products__list-images">
-  <div class="products__list-block">
-    <p class="products__list-block-tittle">Подвеска Мишки гамми с фианитами</p>
-    <p class="products__list-price">5000₩/5$</p>
-
-  </div>
-<div class="">
-  <img class="products__list-img1" src="../assets/bearsbij.jpeg" alt="">
-  <p class="products__list-descr">Серьги,которые украсят любой образ</p>
-  <p class="products__list-subtittle">3500₩</p>
-</div>
-  <div>
-    <img  class="products__list-img2" src="../assets/ear2.jpeg" alt="">
-    <p></p>
-    <p></p>
-  </div>
-   <div>
-     <img class="products__list-img2" src="../assets/pendats.jpeg" alt="">
-     <p></p>
-     <p></p>
-   </div>
-  <div>
-    <img  class="products__list-img3" src="../assets/pendast2.jpeg" alt="">
-    <p></p>
-    <p></p>
-  </div>
-  <div>
-    <img class="products__list-img4" src="../assets/rings3.jpeg" alt="">
-    <p></p>
-    <p></p>
 
   </div>
 
-</div>
-  </div>
+<!--  <div class="products">-->
+<!--    <div class="products__list">-->
+<!--      <p class="products__list-tittle">Best Sellers</p>-->
+<!--    </div>-->
+<!--<div class="products__list-images">-->
+<!--  <img class="products__list-img1" src="../assets/bearsbij.jpeg" alt="">-->
 
+<!--  <div class="products__list-block">-->
+<!--    <p class="products__list-block-tittle">Подвеска Мишки гамми с фианитами</p>-->
+<!--    <p class="products__list-price">5000₩/5$</p>-->
+
+<!--  </div>-->
+
+<!--<div class="">-->
+<!--  <img  class="products__list-img2" src="../assets/ear2.jpeg" alt="">-->
+<!--  <p class="products__list-descr">Серьги,которые украсят любой образ</p>-->
+<!--  <p class="products__list-subtittle">3500₩</p>-->
+<!--</div>-->
+
+<!--   <div>-->
+<!--     <img class="products__list-img2" src="../assets/necklack.png" alt="">-->
+<!--     <p>Браслетс цирконами, покрытие 24к</p>-->
+<!--     <p> 35000₩/30$ </p>-->
+<!--   </div>-->
+<!--  <div>-->
+<!--    <img  class="products__list-img3" src="../assets/suspension.png" alt="">-->
+<!--    <p>Подвеска. Покрытие 14к</p>-->
+<!--    <p>5000₩/4,23$</p>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <img class="products__list-img4" src="../assets/rings3.jpeg" alt="">-->
+<!--    <p>Кольцо слева 11000₩/9.30$</p>-->
+<!--    <p>Кольцо справа 5500₩/4.65$</p>-->
+
+<!--  </div>-->
+
+<!--</div>-->
+<!--  </div>-->
 
   <div class="q-pa-md">
+
+
     <q-carousel
       v-model="slide"
-      transition-prev="slide-right"
-      transition-next="slide-left"
       swipeable
       animated
-      control-color="primary"
+      :control-type="controlType"
+      control-color="black"
       navigation
       padding
       arrows
       height="300px"
-      class="bg-grey-1 shadow-2 rounded-borders"
+      class="text-purple rounded-borders"
     >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" src="../assets/pendast2.jpeg" />
-          <q-img class="rounded-borders col-6 full-height" src="../assets/pendats.jpeg" />
+      <q-carousel-slide name="style" class="column no-wrap flex-center">
+
+        <div class="q-mt-md text-center text-black">
+          {{ lorem }}
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="2" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/parallax2.jpg" />
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/quasar.jpg" />
+      <q-carousel-slide name="tv" class="column no-wrap flex-center">
+
+        <div class="q-mt-md text-center text-black">
+          {{ lorem }}
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="3" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/cat.jpg" />
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/linux-avatar.png" />
+      <q-carousel-slide name="layers" class="column no-wrap flex-center">
+        <div class="q-mt-md text-center text-black">
+          {{ lorem }}
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="4" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/material.png" />
-          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/donuts.png" />
+      <q-carousel-slide name="map" class="column no-wrap flex-center">
+        <div class="q-mt-md text-center text-black">
+          {{ lorem }}
         </div>
       </q-carousel-slide>
     </q-carousel>
   </div>
+
+
+
   <div class="footer">
 <div class="footer__container">
 <div class="footer__menu">
-<ul class="footer__menu-list">
-  <li class="footer__menu-item">
-    <a class="footer__menu-link" href="">Доставка и оплата</a>
+<!--  <div>-->
+<!--    <h1>Информация</h1>-->
+
+<!--  </div>-->
+
+  <ul class="footer__menu-list">
+    <h1 class="footer__menu-list-tittle">Информация</h1>
+
+    <li class="footer__menu-item">
+    <a class="footer__menu-link" href="">Доставка</a>
   </li>
-  <li>
+
+    <li>
     <a class="footer__menu-link" href="">О нас</a>
   </li>
   <li class="footer__menu-item">
     <a class="footer__menu-link" href="">Частые вопросы</a>
   </li>
-</ul>
+
+  </ul>
+
+
+  <ul class="footer__menu-list2">
+
+    <li class="footer__menu-item">
+      <a class="footer__menu-link" href="">Условия сотрудничества</a>
+    </li>
+
+      <li class="footer__menu-item">
+        <a class="footer__menu-link" href="">Способы хранения бижутерии</a>
+      </li>
+
+     <li class="footer__menu-item">
+          <a class="footer__menu-link" href="">Как с нами связаться?</a>
+        </li>
+  </ul>
+  <ul class="footer__menu-list2">
+
+    <li class="footer__menu-item">
+      <a class="footer__menu-link" href="">Как оформлять заказ</a>
+    </li>
+
+    <li class="footer__menu-item">
+      <a class="footer__menu-link" href="">Отзывы</a>
+    </li>
+
+    <li class="footer__menu-item">
+      <a class="footer__menu-link" href="">Оплата</a>
+
+    </li>
+
+  </ul>
+
+
 
 </div>
+
 </div>
+    <div class="footer__social-links">
+      <img class="footer__icons" src="../assets/visalogo.png" alt="">
+
+      <img class="footer__icons" src="../assets/iconinst.png" alt="">
+      <img class="footer__icons" src="../assets/iconwhatsapp.png" alt="">
+      <img class="footer__icons" src="../assets/telegramicon.png" alt="">
+    </div>
 
   </div>
 </div>
@@ -210,12 +286,28 @@
 
 <script>
 import {defineComponent} from 'vue'
-
+import { ref, watch } from 'vue'
 export default ({
   name: "Header",
+
+  setup () {
+    return {
+
+
+      slide: ref('style'),
+      tittle: 'Серьги,которые украсят любой образ',
+      description:'3500₩/3$',
+      pic:'../assets/ear2.jpeg'
+    }
+  }
   // setup () {
   //   return {
   //     slide: ref(1)
+  //   }
+  // },
+  // data(){
+  //   return{
+  //
   //   }
   // }
 })
